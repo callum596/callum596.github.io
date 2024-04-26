@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Main Game - DevCritter: A Developer's Journey</title>
+    <link id="gameStyle" rel="stylesheet" href="../CSS/Game1.css">
+    <link id="progressionStyle" rel="stylesheet" href="">
+</head>
+<body>
+    
+    <nav id="navBar"> <!-- Nav bar -->
+        <button id="returnMenu" class="button">Return to Menu</button>
+        <button id="tutorial" class="button">Tutorial</button>
+        <button id="options" class="button">Options</button>
+        <button id="shop" class="button">Shop</button>
+            <h1>Game</h1>
+    </nav>
+
+
+    <div id="audioPermission" style="display:none; position: fixed; top: 0; left: 0; width: 100%; background: lightgray; padding: 10px; text-align: center; z-index: 1000;">
+        <p>Allow background music to play?</p>
+        <button id="allowAudio">Yes</button>
+        <button id="denyAudio">No</button>
+    </div>
+
+    <div id="petHome">
+
+        <!-- Container for the character -->
+        <div id="character-container">
+            <img id="character" src="../IMAGES/guy.svg" alt="Character Image" />
+        </div>
+        
+        <!-- Images for furniture -->
+        <img id="window" src="../IMAGES/window.svg" alt="Window Image" style="display: none; "/>
+        <img id="rug" src="../IMAGES/rug.svg" alt="rug Image" style="display: none; "/>
+        <img id="sofa" src="../IMAGES/sofa.svg" alt="sofa Image" style="display: none;" />
+
+        <!-- The flooor -->
+        <div id="floor"></div>
+
+
+        <button id="toLessons" class="button">Go to Lessons</button>
+        <button id="break" class="button">Take Break $10</button>
+
+        <!-- player Stats -->
+        <div id="petStats">
+            <p>Money: <span id="money">0</span></p>
+            <p>Knowledge: <span id="knowledge">0</span></p>
+            <p>Social Life: <span id="socialLife">0</span></p>
+        </div>
+    </div>
+
+    <audio id="backgroundMusic" loop>
+        <source src="../AUDIO/MUSIC.mp3" type="audio/mpeg">
+    </audio>
+
+    <script src="../JS/Music.js"></script>
+    <script src="../JS/styleManager.js"></script>
+    <script src="../JS/Game.js"></script>
+</body>
+</html>

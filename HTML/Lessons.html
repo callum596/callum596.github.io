@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Lessons - DevCritter: A Developer's Journey</title>
+    <link rel="stylesheet" href="../CSS/lessons.css">
+    <link id="progressionStyle" rel="stylesheet" href="">
+</head>
+<body>
+    <header>
+        <nav id="navBar">
+            <button id="backButton" class="button back-button">Back to Game</button>
+                <h1>DevCritter's Lessons</h1>
+        </nav>
+    </header>
+
+    <main>
+
+        <div id="audioPermission" style="display:none; position: fixed; top: 0; left: 0; width: 100%; background: lightgray; padding: 10px; text-align: center; z-index: 1000;">
+            <p>Allow background music to play?</p>
+            <button id="allowAudio">Yes</button>
+            <button id="denyAudio">No</button>
+        </div>
+        
+        <div id="petStats">
+            <p>Money: <span id="money">0</span></p>
+            <p>Knowledge: <span id="knowledge">0</span></p>
+            <p>Social Life: <span id="socialLife">0</span></p>
+        </div>
+
+        <div class="lesson-buttons">
+            <button id="showCSSLessons" class="button">CSS Lessons</button>
+            <button id="showHTMLLessons" class="button">HTML Lessons</button>
+        </div>
+
+        <section id="lessonsList" class="hidden">
+        </section>
+    </main>
+    <!-- the modal for the lessons -->
+    <div id="lessonModal" class="lesson-modal hidden">
+        <div class="lesson-content">
+            <h2 id="lessonTitle"></h2>
+            <div id="lessonText" class="scrollable-text"></div>
+            <div id="testSection">
+               
+            </div>
+        </div>
+        <button id="closeModal" class="button">Close</button>
+    </div>
+    
+    <audio id="backgroundMusic" loop>
+        <source src="../AUDIO/MUSIC.mp3" type="audio/mpeg">
+    </audio>
+
+    <script src="../JS/Music.js"></script>
+    <script src="../JS/styleManager.js"></script>
+    <script src="../JS/Lessons.js"></script>
+</body>
+</html>

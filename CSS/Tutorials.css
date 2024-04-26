@@ -1,0 +1,39 @@
+body, html {
+    margin: 0;
+    padding-top: 10vh;
+    font-family: 'Arial', sans-serif;
+}
+
+.tutorial-container {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    grid-template-rows: repeat(2, auto);
+    gap: 2vh;
+    padding: 2vw;
+    max-width: 80vw;
+    margin: auto;
+}
+
+
+/*Tutorial block styles the blocks and block p styles the paragraphs*/
+.tutorial-block {
+    background-color: #fff;
+    box-shadow: 0 0.4vw 0.8vw rgba(0, 0, 0, 0.1);
+    padding: 2vw;
+    border-radius: 1vw;
+}
+
+.tutorial-block p {
+    text-align: center;
+    padding: 1vw;
+    /*determines the font based on the viewport size*/
+    font-size: calc(1rem + 0.5vw);
+    color: #333;
+}
+
+.back-button {
+    position: absolute;
+    top: 1vh;
+    left: 1vw;
+    z-index: 10;
+}

@@ -1,0 +1,48 @@
+body, html {
+    background-color: #c2a689; 
+}
+
+
+/*The button class in progression 1 makes all the javascript buttons look like they are just text hyperlinks*/
+/*I use border and background none to ensure compatibility across broswers incase any browsers have default style sheets for JS buttons*/
+.button {
+    color: blue;
+    text-decoration: underline;
+    cursor: pointer;
+    background: none;
+    border: none;
+    padding: 10px 20px;
+    font-size: 1rem;
+    display: inline;
+}
+
+
+/* this is a shared nav bar between each page and its purpose is to give off the impression of changing JS*/
+/*Its coloured the same as the background to look invisible while still holding all the buttons in correct places*/
+/*The z index is high to ensure that the navbar is not hidden behind any other elements*/
+#navBar {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    width: 100vw;
+    padding: 0 1.39vw;
+    background-color: #c2a689;
+    color: white;
+    position: fixed;
+    top: 0;
+    left: 0;
+    z-index: 100;
+    height: 5.55vh;
+    box-sizing: border-box;
+}
+
+/*This overwrites the default styling for the H1 element and basically just styles my titles*/
+#navBar h1 {
+    position: absolute;
+    left: 50%;
+    top: 50%;
+    transform: translate(-50%, -50%);
+    margin: 0;
+    font-size: 1.5rem;
+    z-index: 1;
+}

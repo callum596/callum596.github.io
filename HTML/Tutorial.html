@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Tutorials - DevCritter: A Developer's Journey</title>
+    <link rel="stylesheet" href="../CSS/Tutorials.css"> 
+    <link id="progressionStyle" rel="stylesheet" href=""> 
+</head>
+<body>
+
+    <header id="navBar" >
+        <button id="backButton" class="button back-button">Back to Game</button>
+            <h1>Tutorials</h1>
+    </header>
+
+    <div id="audioPermission" style="display:none; position: fixed; top: 0; left: 0; width: 100%; background: lightgray; padding: 10px; text-align: center; z-index: 1000;">
+        <p>Allow background music to play?</p>
+        <button id="allowAudio">Yes</button>
+        <button id="denyAudio">No</button>
+    </div>
+
+    <!-- just paragraphs with a short tutorial -->
+    <main class="tutorial-container">
+        <div class="tutorial-block">
+            <p>Complete lessons in the lesssons tab to earn money</p>
+        </div>
+        <div class="tutorial-block">
+            <p>Be careful though as it will also reduce your social life</p>
+        </div>
+        <div class="tutorial-block">
+            <p>social life can be gained by taking a break costing money</p>
+        </div>
+        <div class="tutorial-block">
+            <p>Spend your money in the store and watch the css change as you progress</p>
+        </div>
+    </main>
+
+    <audio id="backgroundMusic" loop>
+        <source src="../AUDIO/MUSIC.mp3" type="audio/mpeg">
+    </audio>
+
+    <script src="../JS/Music.js"></script>
+    <script src="../JS/styleManager.js"></script>
+    <script src="../JS/Tutorials.js"></script>
+</body>
+</html>

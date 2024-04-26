@@ -1,0 +1,47 @@
+
+/*Sets up the basic css for the body of the page like fonts colours and viewport units to try and ensure the website doesnt change too much when the browsers size is manipulated*/
+body, html {
+    margin: 0;
+    padding-top: 4.44vh;
+    font-family: 'Arial', sans-serif;
+    background-color: #c2a689;
+    height: 100vh;
+    text-align: center;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+/*This holds the container for the credits to make them easier to style*/
+.credits-container {
+    width: 80vw;
+    max-width: 80vw;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    margin: 5vh auto;
+}
+
+
+
+/*This positions the back button but it is styled in the progression 1 and 2 css files*/
+.back-button {
+    position: absolute;
+    top: 50%;
+    left: 1.39vw;
+    transform: translateY(-50%);
+    z-index: 10;
+}
+
+
+/*This styles the buttons and box for the audio permissions*/
+#audioPermission {
+    color: black;
+    font-family: 'Arial', sans-serif;
+}
+#audioPermission button {
+    padding: 0.56vh 1.11vw;
+    margin: 0 0.28vw;
+}

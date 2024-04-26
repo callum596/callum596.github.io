@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Options - DevCritter: A Developer's Journey</title>
+    <link rel="stylesheet" href="../CSS/Options.css">
+    <link id="progressionStyle" rel="stylesheet" href="">
+</head>
+<body>
+
+    <!-- Nav Bar -->
+    <nav id="navBar">
+        <button id="backButton" class="button back-button">Back to Menu</button>
+            <h1>Options</h1>
+    </nav>
+
+    <div id="audioPermission" style="display:none; position: fixed; top: 0; left: 0; width: 100%; background: lightgray; padding: 10px; text-align: center; z-index: 1000;">
+        <p>Allow background music to play?</p>
+        <button id="allowAudio">Yes</button>
+        <button id="denyAudio">No</button>
+    </div>
+    
+    <!-- check boxes for settings -->
+    <div class="options-container">
+        <div class="option">
+            <label for="soundToggle">Sound:</label>
+            <input type="checkbox" id="soundToggle" checked>
+        </div>
+
+        <div class="option">
+            <label for="textReadabilityToggle">Text Readability:</label>
+            <input type="checkbox" id="textReadabilityToggle">
+        </div>
+
+        <div class="option">
+            <label>Difficulty:</label>
+            <input type="checkbox" id="difficultyToggle">
+        </div>
+    </div>
+
+    <audio id="backgroundMusic" loop>
+        <source src="../AUDIO/MUSIC.mp3" type="audio/mpeg">
+    </audio>
+
+    <script src="../JS/Music.js"></script>
+    <script src="../JS/styleManager.js"></script>
+    <script src="../JS/options.js"></script>
+</body>
+</html>

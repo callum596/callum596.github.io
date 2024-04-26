@@ -1,0 +1,113 @@
+body, html {
+    margin: 0;
+    padding-top: 40px;
+    font-family: 'Arial', sans-serif;
+}
+
+main {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    min-height: 100vh;
+}
+
+.lesson-buttons {
+    text-align: center;
+    margin-bottom: 20px;
+}
+
+.lesson-buttons button {
+    margin: 5px;
+    display: inline-block;
+}
+
+.lesson-modal.hidden {
+    display: none;
+}
+
+
+/*I use modals for each lesson to ensure that they restrict the users interactioons to just the lesson so they cant oopen multiple lessons at once*/
+.lesson-modal {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-color: rgba(0, 0, 0, 0.5);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.lesson-content {
+    background-color: #fff;
+    padding: 20px;
+    border-radius: 5px;
+    max-width: 600px;
+    width: 90%;
+    max-height: 80%;
+    overflow-y: auto;
+    text-align: center;
+}
+
+/*I use radio input here to allow the user to select all of their answers before submitting, this allows me to grade theiir overall score before determinning whether they pass or not*/
+input[type="radio"] {
+    margin: 0 5px;
+}
+
+.lesson-content button {
+    cursor: pointer;
+    margin-top: 20px;
+    background: #ffffff;
+    border: none;
+    color: rgb(0, 0, 0);
+    padding: 10px 20px;
+    border-radius: 5px;
+    font-size: 1rem;
+}
+
+.lesson-content button:hover {
+    background-color: #45484b;
+}
+
+#closeModal {
+    cursor: pointer;
+    margin-top: 20px;
+    background: #ffffff;
+    border: none;
+    color: rgb(0, 0, 0);
+    padding: 10px 20px;
+    border-radius: 5px;
+    font-size: 1rem;
+}
+
+#closeModal:hover {
+    background-color: #45484b;
+}
+
+/*Displays the users stats in the middle of the page*/
+#petStats {
+    position: absolute;
+    top: 20vh;
+    right: 50%;
+    transform: translateX(50%);
+    text-align: right;
+}
+
+.back-button {
+    position: absolute;
+    top: 10px;
+    left: 10px;
+    z-index: 10;
+}
+
+#audioPermission {
+    color: black;
+    font-family: Arial, sans-serif;
+}
+
+#audioPermission button {
+    padding: 5px 10px;
+    margin: 0 5px;
+}

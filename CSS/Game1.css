@@ -1,0 +1,123 @@
+
+/*The style for the body, overflow hidden ensures the page isnt scrollable to make it look like a persons house as a house is not scrollable*/
+body, html {
+    margin: 0;
+    font-family: 'Arial', sans-serif;
+    overflow: hidden;
+}
+/*Pet home is the walls of the house and is styled differenntly to the floor to make it look like a 3D room*/
+#petHome {
+    position: relative;
+    width: 100%;
+    height: calc(100vh - 60px);
+    padding-top: 60px;
+    background-color: #c2a689;
+}
+/*The floor style it uses a z index of 2 to ensure that its only overlapped with elements with a higher index*/
+#floor {
+    position: absolute;
+    bottom: 0;
+    width: 100%;
+    height: 20vh;
+    background-color: #42280d;
+    z-index: 2;
+}
+
+
+#toLessons {
+    position: absolute;
+    left: 2%;
+    bottom: 25%;
+}
+
+
+/*the transform property moves the pet stats container along the X axis by 50% to make sure its in the middle of the screen*/
+#petStats {
+    position: absolute;
+    top: 5vh;
+    right: 50%;
+    transform: translateX(50%);
+    text-align: right;
+}
+
+#character-container {
+    position: absolute;
+    left: 50%;
+    bottom: 10vh;
+    transform: translateX(-50%);
+    z-index: 4;
+}
+
+#audioPermission {
+    color: black;
+    font-family: Arial, sans-serif;
+}
+#audioPermission button {
+    padding: 5px 10px;
+    margin: 0 5px;
+}
+
+/*Positioning for the 3 buttons in the top right makes them absolute because it ensures they dont change if other styles happen to impact them laater on*/
+#tutorial, #options, #shop {
+    position: absolute;
+    z-index: 10;
+}
+
+
+/*Here i use the calc function to space the buttons by spacing it by a percentage of its parents width plus an amount of pixels these are seperate from the combined class to not overlap the buttons*/
+#tutorial {
+    right: calc(20% + 40px);
+}
+
+#options {
+    right: calc(10% + 20px);
+}
+
+#shop {
+    right: 20px;
+}
+
+
+
+/*These next 4 classes position the images of furnature and the player with their respective Z indexes to avoid overlapping*/
+/*It uses a mix of absolute positioning transform positioning and Viewport units to try and ensure consistency among browser sizes*/
+/*The reason for not using media queries was due to time constraints and the fact my game is designed for desktop fullscreen*/
+#window {
+    position: absolute;
+    top: 50vh;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    width: 15vw;
+    height: 20vh;
+    z-index: 1;
+}
+
+#character {
+    width: 20vw;
+    max-width: 700px;
+    min-width: 200px;
+    position: absolute;
+    left: 50%;
+    bottom: 5vh;
+    transform: translateX(-50%);
+    z-index: 4;
+}
+
+#rug {
+    position: absolute;
+    bottom: -2vh;
+    left: 50%;
+    transform: translateX(-50%);
+    width: 30vw;
+    height: auto;
+    z-index: 3;
+}
+
+#sofa {
+    position: absolute;
+    right: 10%;
+    bottom: 10vh;
+    width: 15vw;
+    height: auto;
+    z-index: 3;
+}

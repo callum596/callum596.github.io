@@ -1,0 +1,48 @@
+
+/*Very basic so i didnt comment*/
+body, html {
+    height: 100%;
+    margin: 0;
+    padding: 0;
+    font-family: 'Arial', sans-serif;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+}
+
+.menu-container {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+    margin-top: 20vh;
+}
+
+.menu-container button {
+    width: 80%;
+    max-width: 300px;
+}
+
+#playButton {
+    font-size: 1.8em; 
+    margin-bottom: 10px;
+}
+
+#settingsButton {
+    font-size: 1.6em; 
+    margin-bottom: 10px;
+}
+
+#creditsButton {
+    font-size: 1.4em;
+}
+
+#audioPermission {
+    color: black;
+    font-family: Arial, sans-serif;
+}
+#audioPermission button {
+    padding: 5px 10px;
+    margin: 0 5px;
+}
