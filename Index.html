@@ -1,0 +1,34 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>DevCritter: A Developer's Journey</title>
+    <link rel="stylesheet" href="CSS/Landingpage.css"> <!-- Link to your CSS file -->
+    <link id="progressionStyle" rel="stylesheet" href="">
+</head>
+<body>
+    <div class="menu-container">
+        <h1>DevCritter: A Developer's Journey</h1>
+        <button id="playButton" class="button">Play Game</button>
+        <button id="settingsButton" class="button">Settings</button>
+        <button id="creditsButton" class="button">Credits</button>
+    </div>
+
+    <div id="audioPermission" style="display:none; position: fixed; top: 0; left: 0; width: 100%; background: lightgray; padding: 10px; text-align: center; z-index: 1000;">
+        <p>Allow background music to play?</p>
+        <button id="allowAudio">Yes</button>
+        <button id="denyAudio">No</button>
+    </div>
+   
+    
+   
+    <audio id="backgroundMusic" loop>
+        <source src="AUDIO/MUSIC.mp3" type="audio/mpeg">
+    </audio>
+
+    <script src="JS/Music.js"></script>
+    <script src="JS/styleManager.js"></script>
+    <script src="JS/Mainmenu.js"></script> <!-- Link to your external JavaScript file -->
+</body>
+</html>
